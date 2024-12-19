@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
-
+//version mejorada
 $user_id = $_SESSION['user_id'];
 $posts_per_page = 10;
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
